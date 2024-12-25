@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Калькулятор стоимости</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="calc.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Магазин</h1>
+  </header>
+  <form>
+    Количество:
+    <input type="text" id="n" value="1"><br>
+    Выберите нужный товар:<br>
+    <select name="prodType">
+      <option checked="checked" value="1">Очки</option>
+      <option value="2">Джинсы</option>
+      <option value="3">Майка</option>
+    </select><br>
+    <div id="radios">
+      <label><input type="radio" checked="checked" name="prodOptions" value="option1"> Белые</label>
+      <label><input type="radio" name="prodOptions" value="option2"> Малиновые</label>
+      <label><input type="radio" name="prodOptions" value="option3"> Чёрные</label>
+    </div><br>
+    <div id="checkboxes">
+      <label><input type="checkbox" checked="checked" name="prop1"> Однотонная</label>
+      <label><input type="checkbox" name="prop2"> С принтом</label>
+    </div>
+    Цена товара:<input name="field-answer" id="answer" type="text" value="">
+  </form>
+</body>
+
+</html>
